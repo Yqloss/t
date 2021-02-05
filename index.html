@@ -3,8 +3,12 @@
 <head>
 <script>
 var arrnames=new Array(
+  "luogu",
+  "bcly"
 );
 var arrurls= new Array(
+  "https://www.luogu.com.cn/",
+  "https://47.104.93.98/"
 );
 var arg=window.location.href.split('?')[1];
 for(var i=0;i<arrnames.length;i++)if(arrnames[i]==arg)window.location.href=arrurls[i];
