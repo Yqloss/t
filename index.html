@@ -10,8 +10,10 @@ var arrurls= new Array(
   "https://www.luogu.com.cn/",
   "https://47.104.93.98/"
 );
-var arg=window.location.href.split('?')[1];
-for(var i=0;i<arrnames.length;i++)if(arrnames[i]==arg)window.location.href=arrurls[i];
+var arg=window.location.href.split('?')[1].split("&").join("=").split("=");
+var arga;
+for(var i=0;i<arg.length;i+=2)if(arg[i]=="s")arga=arg[i+1];
+for(var i=0;i<arrnames.length;i++)if(arrnames[i]==arga)window.location.href=arrurls[i];
 window.location.href="https://yqloss.github.io/j?s=ADVVJMJTIwTm90JTIwRm91bmQh";
 </script>
 </head>
